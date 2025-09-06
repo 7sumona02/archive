@@ -95,6 +95,7 @@ const Page = () => {
         <div className='text-xs pt-6 text-center leading-tight opacity-80'>
           This page contains affiliate links. As an Amazon Associate, I earn from qualifying purchases.
         </div>
+        <div className='text-xl text-center pt-3 font-medium'>⋅ ⋅ ⋅</div>
       </div>
     </div>
   )
