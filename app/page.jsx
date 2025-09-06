@@ -37,11 +37,14 @@ const BookCard = ({ image, link, author, title }) => {
 
 const Page = () => {
   return (
-    <div className="min-h-screen max-w-2xl mx-auto bg-[#141414] text-[#e3e3e3] flex flex-col items-center gap-20 pt-12 pb-6">
-      <div className={`text-4xl ${cor.className}`}>the archive</div>
+    <div className="min-h-screen max-w-2xl mx-auto bg-[#141414] text-[#e3e3e3] flex flex-col items-center gap-20 pt-12 pb-6 overflow-hidden">
+      <div className='flex flex-col items-center gap-3'>
+        <div className='text-xl'>𓏵</div>
+        <div className={`text-4xl ${cor.className}`}>the archive</div>
+      </div>
 
-      <div className="mx-auto px-15">
-        <div className="grid grid-cols-2 gap-15">
+      <div className="mx-auto md:px-15 px-5">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-15">
           <BookCard
             image="https://i.pinimg.com/736x/d7/2b/21/d72b2135849f6a65a60a3afbe994551b.jpg"
             link="https://amzn.to/4ni6GHK"
@@ -81,13 +84,13 @@ const Page = () => {
         </div>
       </div>
 
-      <div className='px-15 w-2xl flex flex-col  pt-12'>
+      <div className='md:px-15 px-5 max-w-2xl flex flex-col pt-12'>
         <div className='flex items-center justify-between'>
           <div className='flex gap-3'>
-            <div><FaInstagram className='size-5' /></div>
-            <div><FaPinterest className='size-5' /></div>
+            <Link href='https://www.instagram.com/adorexis_/' target='_blank'><FaInstagram className='size-5' /></Link>
+            <Link href='https://www.instagram.com/adorexis_/' target='_blank'><FaPinterest className='size-5' /></Link>
           </div>
-          <div className='text-sm text-right leading-tight'>©2025 adorexis. <br /> All rights reserved.</div>
+          <div className='text-sm text-right leading-tight'>© 2025 adorexis. <br /> All rights reserved.</div>
         </div>
         <div className='text-xs pt-6 text-center leading-tight opacity-80'>
           This page contains affiliate links. As an Amazon Associate, I earn from qualifying purchases.
