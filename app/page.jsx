@@ -22,7 +22,7 @@ const BookCard = ({ image, link, author, title }) => {
       <Link
         href={link}
         target="_blank"
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border border-white rounded-full px-6 py-2 opacity-0 group-hover:opacity-100 transition-all duration-200"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border border-white rounded-full px-6 py-2 opacity-0 group-hover:opacity-100 transition-all duration-200 flex justify-center items-center"
       >
         Get It
       </Link>
