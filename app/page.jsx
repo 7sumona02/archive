@@ -37,7 +37,7 @@ const BookCard = ({ image, link, author, title }) => {
 
 const Page = () => {
   return (
-    <div className="min-h-screen max-w-2xl mx-auto bg-[#141414] text-[#e3e3e3] flex flex-col items-center gap-20 pt-12 pb-6 overflow-hidden">
+    <div className="min-h-screen max-w-2xl mx-auto bg-[#141414] text-[#e3e3e3] flex flex-col items-center gap-20 pt-12 pb-3 overflow-hidden">
       <div className='flex flex-col items-center gap-3'>
         <div className='text-xl'>𓏵</div>
         <div className={`text-4xl ${cor.className}`}>the archive</div>
